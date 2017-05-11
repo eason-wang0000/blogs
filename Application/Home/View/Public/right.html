@@ -1,0 +1,38 @@
+ <div class="sidebar">
+        <img src="__PUBLIC__/images/56.jpg" height="150" width="300">
+        <div class="widget widget_categories"><h3 class="widget-tit">文章分类</h3>
+            <ul>
+            <volist name='cateres' id='vo'>
+                <li class="cat-item cat-item-18" style="width: 310px"><a href="__MODULE__/Cate/index/id/{$vo.id}" title="">{$vo.catename}</a>
+                </li>
+                </volist>
+            </ul>
+        </div>
+        <div class="widget widget_recent_entries"><h3 class="widget-tit">最新发表</h3>
+            <ul>
+            <volist name='artres' id='vo'>
+                <li>
+                    <a href="__MODULE__/Article/index/id/{$vo.id}">{$vo.title}</a>
+                </li>
+                </volist>
+               
+            </ul>
+        </div>
+        <div class="widget widget_links"><h3 class="widget-tit">友情链接</h3>
+            <ul class='xoxo blogroll'>
+            <volist name='linkres' id='vo'>
+                <li style="width: 300px"><a href="http://{$vo.url}">{$vo.title}</a></li>
+               <!--  <li><a href="http://www.youmeiwenzi.com/" rel="friend" target="_blank">优美文字</a></li>
+               <li><a href="http://www.cnlianxue.com/" rel="friend" target="_blank">励志文章</a></li>
+               <li><a href="http://bohaishibei.com/" rel="friend" target="_blank">博海拾贝</a></li>
+               <li><a href="http://www.haopic.me/" rel="friend" target="_blank">好图网</a></li>
+               <li><a href="http://www.zreading.cn/" rel="friend" target="_blank">左岸读书</a></li>
+               <li><a href="http://missever.com" rel="friend" target="_blank">思念往昔</a></li>
+               <li><a href="http://www.weiweiqi.com/" rel="friend" target="_blank">经典语录</a></li>
+               <li><a href="http://www.meiwen.com.cn/" rel="friend" target="_blank">美文网</a></li>
+               <li><a href="http://www.qingniantuzhai.com/" rel="friend" target="_blank">青年图摘</a></li>
+                -->
+                </volist>
+            </ul>
+        </div>
+    </div>
